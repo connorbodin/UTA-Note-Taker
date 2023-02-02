@@ -75,9 +75,9 @@ app.post('/api/notes', (req, res) => {
 
 
 
-app.delete('/api/notes/:id', (req, res) => {
-  res.send('Got a DELETE request at /user')
-});
+// app.delete('/api/notes/:id', (req, res) => {
+//   res.send('Got a DELETE request at /user')
+// });
 
 
 
