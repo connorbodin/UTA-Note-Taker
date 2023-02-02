@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const PORT = process.env.port || 3003;
+const PORT = process.env.PORT || 3003;
 const { v4: uuidv4 } = require('uuid');
 // call uuid uuidv4();
 const util = require('util');
