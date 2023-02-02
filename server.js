@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const PORT = process.env.port || 3001;
+const PORT = process.env.port || 3003;
 const { v4: uuidv4 } = require('uuid');
 // call uuid uuidv4();
 const util = require('util');
@@ -66,7 +66,7 @@ app.post('/api/notes', (req, res) => {
      };
 
   readAndAppend(newNote, './db/db.json');
-  res.json(`Tip added successfully 🚀`);
+  res.json(`Note added! 🚀`);
   } else {
     res.error('Error in adding tip');
   }
